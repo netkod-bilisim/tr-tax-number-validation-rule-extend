@@ -1,0 +1,46 @@
+{
+    "name": "netkod-bilisim/tr-tax-number-validation-rule-extend",
+    "description": "Extended version of Turkish string package.",
+    "keywords": [
+        "tax number",
+        "tax number validation",
+        "tax number validation rule",
+        "tr tax number validation rule",
+        "tr tax number validation",
+        "tr tax number",
+        "turkish tax number",
+        "turkish tax number validation",
+        "turkish tax number validation rule",
+        "turkish tax number validation rule extend",
+        "turkish tax number validation extend",
+        "tr tax number validation rule extend",
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tekin Alperen ÖZER",
+            "email": "alperen.ozer@netkodbilisim.com",
+            "role": "Software Engineer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": ">=5.5",
+        "netkod-bilisim/tr-string": "^1"
+    },
+    "autoload": {
+        "classmap": [
+            "./src/"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NetkodBilisim\\TrTaxNumberValidationRuleExtend\\Providers\\TrTaxNumberValidationRuleExtendServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
