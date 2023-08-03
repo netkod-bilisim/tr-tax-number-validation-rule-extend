@@ -1,9 +1,9 @@
 <?php
 
-namespace NetkodBilisim\TrIdentityNumberValidationRuleExtend\Rules;
+namespace NetkodBilisim\TrTaxNumberValidationRuleExtend\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use NetkodBilisim\TrIdentityNumberValidation;
+use NetkodBilisim\TrTaxNumberValidation;
 
 class TrTaxNumberRule implements Rule
 {

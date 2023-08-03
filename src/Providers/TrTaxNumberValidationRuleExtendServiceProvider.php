@@ -1,6 +1,6 @@
 <?php
 
-namespace NetkodBilisim\TrIdentityNumberValidationRuleExtend\Providers;
+namespace NetkodBilisim\TrTaxNumberValidationRuleExtend\Providers;
 
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
