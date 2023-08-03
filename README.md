@@ -1,32 +1,32 @@
 # TR Tax Number Validation Rule Extend
 
 <div style="text-align: center">
-<a href="https://packagist.org/packages/netkod-bilisim/tr-string-str-facade-extend" rel="nofollow">
-    <img src="https://img.shields.io/packagist/v/netkod-bilisim/tr-string-str-facade-extend" alt="Latest Stable Version">
+<a href="https://packagist.org/packages/netkod-bilisim/tr-tax-number-validation-rule-extend" rel="nofollow">
+    <img src="https://img.shields.io/packagist/v/netkod-bilisim/tr-tax-number-validation-rule-extend" alt="Latest Stable Version">
 </a>
 
-<a href="https://packagist.org/packages/netkod-bilisim/tr-string-str-facade-extend" rel="nofollow">
-    <img src="https://img.shields.io/packagist/dt/netkod-bilisim/tr-string-str-facade-extend" alt="Total Downloads">
+<a href="https://packagist.org/packages/netkod-bilisim/tr-tax-number-validation-rule-extend" rel="nofollow">
+    <img src="https://img.shields.io/packagist/dt/netkod-bilisim/tr-tax-number-validation-rule-extend" alt="Total Downloads">
 </a>
 
-<a href="https://packagist.org/packages/netkod-bilisim/tr-string-str-facade-extend" rel="nofollow">
-    <img src="https://poser.pugx.org/netkod-bilisim/tr-string-str-facade-extend/dependents.svg" alt="Dependents">
+<a href="https://packagist.org/packages/netkod-bilisim/tr-tax-number-validation-rule-extend" rel="nofollow">
+    <img src="https://poser.pugx.org/netkod-bilisim/tr-tax-number-validation-rule-extend/dependents.svg" alt="Dependents">
 </a>
 
-<a href="https://packagist.org/packages/netkod-bilisim/tr-string-str-facade-extend" rel="nofollow">
-    <img src="https://img.shields.io/packagist/l/netkod-bilisim/tr-string-str-facade-extend" alt="License">
+<a href="https://packagist.org/packages/netkod-bilisim/tr-tax-number-validation-rule-extend" rel="nofollow">
+    <img src="https://img.shields.io/packagist/l/netkod-bilisim/tr-tax-number-validation-rule-extend" alt="License">
 </a>
 </div>
 
 <div style="text-align: center">
-<a href="https://packagist.org/packages/netkod-bilisim/tr-string-str-facade-extend" rel="nofollow">
-    <img src="http://poser.pugx.org/netkod-bilisim/tr-string-str-facade-extend/require/php" alt="License">
+<a href="https://packagist.org/packages/netkod-bilisim/tr-tax-number-validation-rule-extend" rel="nofollow">
+    <img src="http://poser.pugx.org/netkod-bilisim/tr-tax-number-validation-rule-extend/require/php" alt="License">
 </a>
-<a href="https://scrutinizer-ci.com/g/netkod-bilisim/tr-string-str-facade-extend/badges/quality-score.png?b=master" rel="nofollow">
-    <img src="https://scrutinizer-ci.com/g/netkod-bilisim/tr-string-str-facade-extend/badges/quality-score.png?b=master" alt="Scrutinizer">
+<a href="https://scrutinizer-ci.com/g/netkod-bilisim/tr-tax-number-validation-rule-extend/badges/quality-score.png?b=master" rel="nofollow">
+    <img src="https://scrutinizer-ci.com/g/netkod-bilisim/tr-tax-number-validation-rule-extend/badges/quality-score.png?b=master" alt="Scrutinizer">
 </a>
-<a href="https://github.styleci.io/repos/672844297?branch=master">
-    <img src="https://github.styleci.io/repos/672844297/shield?branch=master" alt="StyleCI">
+<a href="https://github.styleci.io/repos/673723959?branch=master">
+    <img src="https://github.styleci.io/repos/673723959/shield?branch=master" alt="StyleCI">
 </a>
 
 </div>
@@ -51,7 +51,7 @@ composer require netkod-bilisim/tr-tax-number-validation-rule-extend:"^1"
 public function store(Request $request): RedirectResponse
 {
     $validated = $request->validate([
-        'citizen_number' => 'required|tr_identity_number',
+        'tax_number' => 'required|tr_tax_number',
     ]);
  
     // The user is valid...
